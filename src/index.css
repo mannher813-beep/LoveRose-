@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  
+  --color-rose-deep: #E11D48;
+  --color-rose-warm: #FB7185;
+  --color-rose-light: #FFF1F2;
+  --color-rose-gold: #F59E0B;
+}
+
+/* Heart visual animations */
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.15); }
+  40% { transform: scale(1.05); }
+  60% { transform: scale(1.2); }
+}
+
+.animate-heartbeat {
+  animation: heartBeat 1.2s infinite ease-in-out;
+}
+
+@keyframes roseFloat {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+  50% { transform: translateY(-10px) rotate(5deg); opacity: 1; }
+  100% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+}
+
+.animate-rosefloat {
+  animation: roseFloat 4s infinite ease-in-out;
+}
+
+/* Custom Hide Scrollbar classes */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

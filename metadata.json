@@ -1,0 +1,6 @@
+{
+  "name": "LoveRose",
+  "description": "An elegant, Progressive Web App dating platform featuring real-time swiping, matching, secure chat, and premium memberships.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
